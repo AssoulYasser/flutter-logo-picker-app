@@ -9,7 +9,9 @@ final di = GetIt.instance;
 
 Future<void> inject() async {
   // Dio into CompanyLogoService
-  final dio = Dio();
+  final dio = Dio(
+    
+  );
   di.registerSingleton<CompanyLogoService>(CompanyLogoService(dio));
 
   // Service into CompanyLogoRepositoryImpl
